@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-800 transition-colors duration-200;
+  }
+
+  body.dark {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer utilities {
+  .bg-navbar {
+    @apply bg-gradient-to-l from-violet-900 via-violet-800 to-violet-900;
+  }
+
+  .bg-light-navbar {
+    @apply bg-white border-b border-gray-200;
+  }
+}
+
+/* Add these new styles */
+.mobile-menu-open {
+  overflow: hidden;
+}
+
+.mobile-menu-transition {
+  transition: transform 0.3s ease-in-out;
+}
