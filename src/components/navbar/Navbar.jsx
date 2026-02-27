@@ -43,7 +43,7 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="text-2xl font-bold md:text-3xl">
             <a
-              href="#"
+              href="/#home"
               className={theme === 'dark' ? 'text-white' : 'text-gray-800'}
             >
               KRONIUM
@@ -54,7 +54,10 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex items-center gap-10">
               <li className="group relative cursor-pointer">
-                <a href="#" className="flex items-center gap-[2px] h-[72px]">
+                <a
+                  href="/#home"
+                  className="flex items-center gap-[2px] h-[72px]"
+                >
                   Home{' '}
                   <span>
                     <FaSquareCaretDown className="transition-all duration-200 group-hover:rotate-180" />
@@ -63,14 +66,21 @@ const Navbar = () => {
                 {/* Dropdown Section */}
                 <div className="absolute -left-9 z-[99999] hidden w-[150px] bg-gray-150 p-2 border-2 shadow-md rounded-md text-black group-hover:block">
                   <ul className="space-y-3">
-                    <li className="p-2 hover:bg-violet-200">Services</li>
-                    <li className="p-2 hover:bg-violet-200">About Us</li>
+                    <li className="p-2 hover:bg-violet-200">
+                      <a href="/#services">Services</a>
+                    </li>
+                    <li className="p-2 hover:bg-violet-200">
+                      <a href="/#about">About Us</a>
+                    </li>
                     <li className="p-2 hover:bg-violet-200">Privacy Policy</li>
                   </ul>
                 </div>
               </li>
               <li className="group cursor-pointer">
-                <a href="#" className="flex items-center gap-[2px] h-[72px]">
+                <a
+                  href="/#services"
+                  className="flex items-center gap-[2px] h-[72px]"
+                >
                   Services{' '}
                   <span>
                     <FaSquareCaretDown className="transition-all duration-200 group-hover:rotate-180" />
@@ -226,7 +236,7 @@ const Navbar = () => {
           <ul className="flex flex-col gap-6 text-lg">
             <li>
               <a
-                href="#"
+                href="/#home"
                 onClick={toggleMenu}
                 className="text-white hover:text-primary transition-colors"
               >
@@ -235,7 +245,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/#services"
                 onClick={toggleMenu}
                 className="text-white hover:text-primary transition-colors"
               >

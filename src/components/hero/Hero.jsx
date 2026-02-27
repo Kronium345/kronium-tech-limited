@@ -30,6 +30,7 @@ const Hero = () => {
 
   return (
     <div
+      id="home"
       className={`min-h-screen ${
         theme === 'dark' ? 'bg-[#4B0082]' : 'bg-white'
       } transition-colors duration-200 pt-20`}
